@@ -20,4 +20,7 @@ This algorithm requires a robot package and launch package. However, we provide 
 - Robot Package<br>
 It has a plug-in that can move the robot, and reads RGB images.
 - Algorithm Package<br>
+This prepares the algorithm by receiving the image from the robot package.<br>
+Then, when the current image comes in, it executes the algorithm and returns the direction of the robot.
 - Launch Package<br>
+It calls the gazebo simulation world and executes the robot package and the algorithm package.
