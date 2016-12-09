@@ -24,3 +24,5 @@ This prepares the algorithm by receiving the image from the robot package.<br>
 Then, when the current image comes in, it executes the algorithm and returns the direction of the robot.
 - **Launch Package**<br>
 It calls the gazebo simulation world and executes the robot package and the algorithm package.
+
+### How to Use<br>
