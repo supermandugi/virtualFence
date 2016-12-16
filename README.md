@@ -38,3 +38,5 @@ It calls the gazebo simulation world and executes the robot package and the algo
 ### Future Plans
 - The node receiving commands from the keyboard is unstable. We want to improve this.
 - Now we use line features in images. We will add point features in the future.
+![alt tag](http://dl.dropbox.com/s/00og2q900ck9l93/system_environment.jpg)
+![s ss](http://dl.dropbox.com/s/435p4w6dpo418wm/block_diagram.jpg)
