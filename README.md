@@ -17,12 +17,24 @@ This algorithm requires a robot package and launch package. However, we provide 
 
 ### Package<br>
 
-- **Robot Package**<br>
-It has a plug-in that can move the robot, and reads RGB images.
-- **Algorithm Package**<br>
+- **Robot Package**(essential)<br>
+It has a plug-in that can move the robot, and reads RGB images.<br>
+**You should prepare this package.** We used the turtlebot package.
+- **Algorithm Package**(we provided)<br>
 This prepares the algorithm by receiving the image from the robot package.<br>
 Then, when the current image comes in, it executes the algorithm and returns the direction of the robot.
-- **Launch Package**<br>
+- **Launch Package**(optional)<br>
 It calls the gazebo simulation world and executes the robot package and the algorithm package.
 
 ### How to Use<br>
+- Check the topic of the image coming from the robot package.
+- Modify the name of the image topic in the algorithm package. (Example: camera/rgb/raw_image)
+- Check the topic of robot status coming from the robot package.
+- Modify the name of the service in the algorithm package. (Example: gazebo/get_model_state)
+- Then you are ready to use.
+- Moving the robot to the node, such as teleop, press the 'space' button in four hit the fence.
+- Finally, ressing the n button activates the algorithm.
+
+### Future Plans
+- The node receiving commands from the keyboard is unstable. We want to improve this.
+- Now we use line features in images. We will add point features in the future.
